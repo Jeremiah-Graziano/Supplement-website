@@ -4,14 +4,18 @@
   color: white;
   line-height: 50px;
   text-align: center;
-  font-size: 30px;
+  font-size: 20px;
   font-weight: bold;
+}
+
+.free-shipping-banner p {
+  margin-bottom: 0;
 }
 
 .outer-nav {
   display: flex;
   align-content: center;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   background-image: url(https://cdn.shopify.com/s/files/1/0310/6373/6457/files/p-page-bg.webp?v=1665208563);
 }
@@ -237,7 +241,7 @@ nav ul {
   background-color: white;
   margin-top: -100px;
   margin-left: 100px;
-  border: solid black 1px;
+  border: solid white 1px;
 }
 
 .beef-specs h2 {
@@ -249,10 +253,12 @@ nav ul {
 }
 
 .beef-specs ul {
-  margin: 30px;
+  margin: 80px;
+  margin-bottom: 150px;
   list-style: none;
   border-left: dashed black;
   text-align: left;
+  text-indent: 0;
 }
 
 .beef-specs li::before {
@@ -275,40 +281,116 @@ nav ul {
   margin-bottom: 30px;
   padding-top: 0;
   font-weight: bold;
+  list-style-type: none;
 }
 
 .capsule-specs {
   padding-top: 50px;
+  background-image: url(https://cdn.shopify.com/s/files/1/0310/6373/6457/files/benefits-bg.png?v=1665214243);
 }
 
 .capsule-specs img {
   width: 500px;
 }
 
+.capsule-specs ul {
+  margin: 80px;
+  margin-bottom: 150px;
+  list-style: none;
+  border-left: dashed black;
+  text-align: left;
+  text-indent: 0;
+}
+
+.capsule-specs li::before {
+  position: relative;
+  content: "";
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMTIyLjg3N3B4IiBoZWlnaHQ9IjEwMS4wNTJweCIgdmlld0JveD0iMCAwIDEyMi44NzcgMTAxLjA1MiIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMTIyLjg3NyAxMDEuMDUyIiB4bWw6c3BhY2U9InByZXNlcnZlIj48Zz48cGF0aCBkPSJNNC40Myw2My42M2MtMi44NjktMi43NTUtNC4zNTItNi40Mi00LjQyNy0xMC4xMWMtMC4wNzQtMy42ODksMS4yNjEtNy40MTIsNC4wMTUtMTAuMjgxIGMyLjc1Mi0yLjg2Nyw2LjQxNy00LjM1MSwxMC4xMDYtNC40MjVjMy42OTEtMC4wNzYsNy40MTIsMS4yNTUsMTAuMjgzLDQuMDEybDI0Ljc4NywyMy44NTFMOTguNTQzLDMuOTg5bDEuNzY4LDEuMzQ5bC0xLjc3LTEuMzU1IGMwLjE0MS0wLjE4MywwLjMwMS0wLjMzOSwwLjQ3OS0wLjQ2NmMyLjkzNi0yLjU0Myw2LjYyMS0zLjY5MSwxMC4yMjMtMy40OTVWMC4wMThsMC4xNzYsMC4wMTZjMy42MjMsMC4yNCw3LjE2MiwxLjg1LDkuNzc1LDQuNzY2IGMyLjY1OCwyLjk2NSwzLjg2Myw2LjczMSwzLjY2MiwxMC40MTJoMC4wMDRsLTAuMDE2LDAuMTc2Yy0wLjIzNiwzLjU1OC0xLjc5MSw3LjAzNS00LjYwOSw5LjYzMmwtNTkuMjI0LDcyLjA5bDAuMDA0LDAuMDA0IGMtMC4xMTEsMC4xNDEtMC4yMzYsMC4yNjItMC4zNzIsMC4zNjhjLTIuNzczLDIuNDM1LTYuMjc1LDMuNjI5LTkuNzU3LDMuNTY5Yy0zLjUxMS0wLjA2MS03LjAxNS0xLjM5Ni05Ljc0MS00LjAxNkw0LjQzLDYzLjYzIEw0LjQzLDYzLjYzeiIvPjwvZz48L3N2Zz4=);
+  left: -43px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 10px 10px;
+  /* top: 8px; */
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  border-radius: 50%;
+  background-color: #efcf99;
+}
+
+.capsule-specs li {
+  margin-bottom: 20px;
+  padding-top: 0;
+  font-weight: bold;
+  list-style-type: none;
+}
+
 .small-message {
   display: block;
-  background-color: beige;
+  background-color: #f7f6f2;
   text-align: center;
-  color: white;
+  color: gray;
   line-height: 100px;
+}
+
+.small-message a {
+  color: gray;
+}
+
+.the-story-outer {
+  background-image: url(https://cdn.shopify.com/s/files/1/0310/6373/6457/files/nourish-bg.png?v=1665215154);
+}
+
+.the-story h2 {
+  padding: 0 75px;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.the-story p {
+  padding: 0 75px;
+  font-size: 18px;
+}
+
+.the-story p span {
+  display: inline-block;
+  margin-bottom: 20px;
+  font-weight: bold;
 }
 
 .austrailia div {
   margin-bottom: 30px;
   background-color: white;
+  padding: 20px 10px;
 }
-.sub-sections {
-  background-color: gray;
+
+.austrailia h3 {
+  color: #1f0a00;
+  background-color: white;
 }
 
 .testimonial {
-  height: 50vh;
+  height: 100vh;
+  background-image: url(https://cdn.shopify.com/s/files/1/0310/6373/6457/files/bg-reviews.png?v=1665395717);
 }
 
 .testimonial h2 {
   text-align: center;
+  padding: 100px;
 }
 
 .testimonial-inner p {
-  background-color: lightgray;
+  background-color: white;
+  font-size: 30px;
+  font-weight: bold;
+  color: #1f0a00;
+  padding: 30px;
+}
+
+.testimonial-inner p span {
+  display: block;
+  color: black;
+  font-size: 22px;
+  font-weight: 200;
+  padding-top: 30px;
 }
