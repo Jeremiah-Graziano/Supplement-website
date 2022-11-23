@@ -25,16 +25,16 @@
 }
 
 .logo-nav img {
-  width: 100px;
+  width: 175px;
   background-color: black;
-  margin-right: 100px;
+  margin-right: 75px;
 }
 
 .logo-nav {
   display: flex;
   justify-content: space-between;
   padding-left: 50px;
-  width: 25%;
+  width: 30%;
   align-items: center;
 }
 
@@ -61,7 +61,7 @@ nav ul {
 .nav-options li:last-child {
   background-color: #eecf98;
   margin-left: 20px;
-  padding: 5px;
+  padding: 5px 15px;
 }
 
 .icon-nav {
@@ -70,9 +70,10 @@ nav ul {
 }
 .icon-nav ul {
   display: flex;
+  padding-left: 0;
+  width: 100%;
   justify-content: flex-start;
   align-items: center;
-  width: 100%;
   list-style: none;
 }
 
@@ -84,12 +85,12 @@ nav ul {
 .main-product {
   padding-top: 50px;
   height: 100vh;
-  background-image: url(https://cdn.shopify.com/s/files/1/0310/6373/6457/files/p-page-bg.webp?v=1665208563);
-  background-size: contain;
+  /* background-image: url(https://cdn.shopify.com/s/files/1/0310/6373/6457/files/p-page-bg.webp?v=1665208563); */
 }
 
 .main-product-outer {
   background-image: url(https://cdn.shopify.com/s/files/1/0310/6373/6457/files/p-page-bg.webp?v=1665208563);
+  background-size: contain;
 }
 .reviews {
   font-size: 14px;
@@ -101,9 +102,22 @@ nav ul {
 }
 
 .main-product h2 {
-  font-size: 40px;
+  font-size: 55px;
   font-weight: bold;
   text-transform: capitalize;
+  margin-bottom: 30px;
+}
+
+.main-product h2::after {
+  content: "";
+  background-color: #ff7f00;
+  height: 3px;
+  width: 45px;
+  position: relative;
+  display: block;
+  left: 0;
+  bottom: 0;
+  margin-top: 10px;
 }
 
 .main-product p {
@@ -118,6 +132,54 @@ nav ul {
   font-size: 20px;
   padding-left: 0;
   color: #333;
+}
+
+.subscription-info::before {
+  content: "";
+  display: inline-block;
+  height: 13px;
+  width: 13px;
+  background-size: 13px;
+  background-image: url(https://cdn.shopify.com/s/files/1/0663/7443/5066/t/2/assets/info.png);
+  position: relative;
+  bottom: 10px;
+}
+
+/* .subscription-pop-up {
+  display: none;
+}
+
+.subscription-info:hover {
+  content: attr(data-label);
+  font-size: 11px;
+  color: #fbfaf7;
+  background: #bd472a;
+  display: block;
+  margin: -30px -20px -20px;
+  padding: 13px;
+  position: relative;
+  border-radius: 6px;
+  top: 7px;
+} */
+
+/* .subscription-pop-up:hover {
+  font-size: 11px !important;
+  color: #fbfaf7;
+  font-family: CeraPro-reg !important;
+  background: #bd472a !important;
+  display: inline-block;
+  margin: -30px -20px -20px;
+  padding: 13px;
+  position: relative;
+  border-radius: 6px;
+  top: 7px;
+  z-index: 99;
+} */
+
+.purchase-options input[type="radio"] {
+  width: 18px;
+  height: 18px;
+  border: 1px solid black;
 }
 
 .purchase-options li:last-child {
@@ -148,7 +210,9 @@ nav ul {
 
 .quantity-minus {
   height: 50px;
-  width: 50%;
+  width: 25%;
+  color: gray;
+  font-size: 25px;
   border-radius: 25px 0 0 25px;
   background-color: #eecf98;
   border: #eecf98 1px solid;
@@ -156,7 +220,7 @@ nav ul {
 
 .input-amount {
   height: 50px;
-  width: 75%;
+  width: 32%;
   text-align: center;
   background-color: white;
   border: 1px white solid;
@@ -164,26 +228,74 @@ nav ul {
 
 .quantity-plus {
   height: 50px;
-  width: 50%;
+  width: 25%;
   border-radius: 0 25px 25px 0;
   background-color: #eecf98;
+  color: gray;
   border: #eecf98 1px solid;
+
+  font-size: 25px;
+}
+
+.purchase-buttons input[type="button"]:hover {
+  color: white;
+  opacity: 0.5;
 }
 
 .buy-now {
-  height: 50px;
   width: 200px;
+  height: 50px;
   margin-left: 5px;
   background-color: #c14729;
   border: 1px solid #c14729;
   border-radius: 25px;
   color: white;
   font-size: 20px;
+  text-transform: capitalize;
 }
 
 .main-product img {
-  width: 400px;
+  width: 450px;
   margin-left: 15%;
+}
+
+.color-pallete {
+  margin-top: 50px;
+  padding-right: 5%;
+  text-align: center;
+}
+
+.color-pallete :first-child {
+  background-color: white;
+  position: relative;
+  left: 10px;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAYAAACtWK6eAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEwAACxMBAJqcGAAABI1JREFUeJzt3c2r5XMcB/A3xsNMxGIKIZKnDCsbDwvZWQ02lNWVBZE8FLKYnYe/gY1LhI2FFZPGFGXBjHkgUR6KpBClBvN0Lc7cQs1c5/c99/O993der/ru7rm97/39Puf8+r7POb8EAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAfs5Ksi3J/iSHkhxMsifJk0k2dcwF3V2W5OskS8dZXyS5uFs66OjcnHg4ltfeJKd2yghdnJlkV1YejuV1b5+YUG9Dkrfz/4dj6djPw1xYzHTDsZTk+x5BodrTmX44lpL80CMsVLovw4ZjKcmODnmhzNYkhzN8QO6rjww1rk9yIMOH46PY5mWkrkjyU4YPx7dJzq8ODRX+bxF4vPVLkqvKU0OBaYvA/64/ktxUnhoKDCkC/7mOJLmjPDUUWczw4VhK8mB5YigytAhcXs/VR4YaLUXgUpKXk5xUnhoKtBaB26PrYKRai8DdmXyqEEantQj8JopARqq1CPw5yZXlqaFAaxF4IMmN5amhwCyKwNvLU0ORxbRt5z5QnhiKtBaBz9ZHhhqtReBL9ZGhRmsR+E4UgYxUaxG4K5NdLxidWRSB55WnhgKKQDiOWRSBN5SnhgKtReDhJLeVp4Yii2nbzr2/PDEUaS0Cn6mPDDVai8DF8sR0M28f/dya5M0kpwx8/LvHfsehmSVaP45k8gTBSLUWgfO+DifZl+SJJBun/N+zxrUWgda/1+dxT8XR2JDJM1/vk2ps67MkZ0xxHNalk3sHKLCQ5NreIUbo6szBl9/Nw4Dc0zvAiN3dO8Bqm4ddrD+TnN47xEj9lZFfZs3DK8g8/I29LPUOsNrm4eTZ1zvAiO3vHWC1zcOAvNg7wIi90jsA7U5Nsjf9t0XHtvYkOW2K48AadmmSH9P/pBrL+iTJBVMdgXVqHnaxll2XZGfaPjd+NJMTZB79keTTJK8meSHJwb5xWA23ZvJGw6HPnDvisoKRW0jb5cVrma9X3rk29G3f69meTC6Vbhn4+GsyuUzbPrNEsAY9n7ZXkkfqI0OdU5K8leEDcjTJneWpodCmJB9m+JD8meTm8tRQaHOSLzN8SH5NsqU8NRRqLRK/S3JheWoodF2S3zN8SPYnObs8NRRqLRLfiyKRkVtI2/bv61EkjsY8FoUrmUWReFYUiYxca5H4aH1kqDOLIvGu8tRQSJEIK5hFkXhNeWoopEiEFcyiSDynPDUUai0Sd8aX2DFyC2nb/n0jisR1Q1E4vdYicUsm79l6Z2aJYA1qLRIfq48MdRSJsILWIvGvDL9Ug3WhtUj8LW7ww8i1FonfJ7moPDUUai0S90ZHwsi1FokP1UeGWgsZPiAf1MeFetsybEB+6REWehhSJP7cJSl0MKRIfL9LUuhk2iLx4T4xoZ/NSb7IysPxZZKNnTJCV5fkxEPyVZLLe4WDtWBTkseTfJzJ/f4OJNmd5Km03TcRAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAUn8DCMmwSgYb6w0AAAAASUVORK5CYII=);
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  background-position: center;
+}
+.color-pallete :last-child {
+  background-color: white;
+  position: relative;
+  right: 10px;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAYAAACtWK6eAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEwAACxMBAJqcGAAABI1JREFUeJzt3c2r5XMcB/A3xsNMxGIKIZKnDCsbDwvZWQ02lNWVBZE8FLKYnYe/gY1LhI2FFZPGFGXBjHkgUR6KpBClBvN0Lc7cQs1c5/c99/O993der/ru7rm97/39Puf8+r7POb8EAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAfs5Ksi3J/iSHkhxMsifJk0k2dcwF3V2W5OskS8dZXyS5uFs66OjcnHg4ltfeJKd2yghdnJlkV1YejuV1b5+YUG9Dkrfz/4dj6djPw1xYzHTDsZTk+x5BodrTmX44lpL80CMsVLovw4ZjKcmODnmhzNYkhzN8QO6rjww1rk9yIMOH46PY5mWkrkjyU4YPx7dJzq8ODRX+bxF4vPVLkqvKU0OBaYvA/64/ktxUnhoKDCkC/7mOJLmjPDUUWczw4VhK8mB5YigytAhcXs/VR4YaLUXgUpKXk5xUnhoKtBaB26PrYKRai8DdmXyqEEantQj8JopARqq1CPw5yZXlqaFAaxF4IMmN5amhwCyKwNvLU0ORxbRt5z5QnhiKtBaBz9ZHhhqtReBL9ZGhRmsR+E4UgYxUaxG4K5NdLxidWRSB55WnhgKKQDiOWRSBN5SnhgKtReDhJLeVp4Yii2nbzr2/PDEUaS0Cn6mPDDVai8DF8sR0M28f/dya5M0kpwx8/LvHfsehmSVaP45k8gTBSLUWgfO+DifZl+SJJBun/N+zxrUWgda/1+dxT8XR2JDJM1/vk2ps67MkZ0xxHNalk3sHKLCQ5NreIUbo6szBl9/Nw4Dc0zvAiN3dO8Bqm4ddrD+TnN47xEj9lZFfZs3DK8g8/I29LPUOsNrm4eTZ1zvAiO3vHWC1zcOAvNg7wIi90jsA7U5Nsjf9t0XHtvYkOW2K48AadmmSH9P/pBrL+iTJBVMdgXVqHnaxll2XZGfaPjd+NJMTZB79keTTJK8meSHJwb5xWA23ZvJGw6HPnDvisoKRW0jb5cVrma9X3rk29G3f69meTC6Vbhn4+GsyuUzbPrNEsAY9n7ZXkkfqI0OdU5K8leEDcjTJneWpodCmJB9m+JD8meTm8tRQaHOSLzN8SH5NsqU8NRRqLRK/S3JheWoodF2S3zN8SPYnObs8NRRqLRLfiyKRkVtI2/bv61EkjsY8FoUrmUWReFYUiYxca5H4aH1kqDOLIvGu8tRQSJEIK5hFkXhNeWoopEiEFcyiSDynPDUUai0Sd8aX2DFyC2nb/n0jisR1Q1E4vdYicUsm79l6Z2aJYA1qLRIfq48MdRSJsILWIvGvDL9Ug3WhtUj8LW7ww8i1FonfJ7moPDUUai0S90ZHwsi1FokP1UeGWgsZPiAf1MeFetsybEB+6REWehhSJP7cJSl0MKRIfL9LUuhk2iLx4T4xoZ/NSb7IysPxZZKNnTJCV5fkxEPyVZLLe4WDtWBTkseTfJzJ/f4OJNmd5Km03TcRAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAUn8DCMmwSgYb6w0AAAAASUVORK5CYII=);
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  background-position: center;
+  transform: rotate(180deg);
+}
+
+.color-pallete button {
+  background-color: #bcae8f;
+  border-radius: 50%;
+  margin-right: 5px;
+  width: 30px;
+  height: 30px;
+  border: none;
+}
+
+.color-pallete :nth-child(2) {
+  background-color: #6a4531;
 }
 
 .support-benefits h2 {
@@ -377,6 +489,8 @@ nav ul {
 .testimonial h2 {
   text-align: center;
   padding: 100px;
+  font-size: 65px;
+  font-weight: bold;
 }
 
 .testimonial-inner p {
