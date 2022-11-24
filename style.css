@@ -298,6 +298,16 @@ nav ul {
   background-color: #6a4531;
 }
 
+.support-benefits {
+  background-image: url(https://cdn.shopify.com/s/files/1/0310/6373/6457/files/benefits-bg.png?v=1665214243);
+  margin-bottom: 200px;
+}
+
+.support-benefits div {
+  padding-left: 60px;
+  margin-bottom: 50px;
+}
+
 .support-benefits h2 {
   margin-bottom: 50px;
   padding-top: 150px;
@@ -305,9 +315,8 @@ nav ul {
   font-weight: bold;
 }
 
-.support-benefits {
-  background-image: url(https://cdn.shopify.com/s/files/1/0310/6373/6457/files/benefits-bg.png?v=1665214243);
-  margin-bottom: 200px;
+.support-benefits img {
+  padding-top: 50px;
 }
 
 .support-benefits ul {
@@ -324,7 +333,7 @@ nav ul {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 10px 10px;
-  /* top: 8px; */
+  top: 2px;
   width: 20px;
   height: 20px;
   display: inline-block;
@@ -334,7 +343,10 @@ nav ul {
 
 .support-benefits li {
   padding-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+  position: relative;
+  font-size: 20px;
+  top: -2px;
 }
 
 .cow-pasture {
