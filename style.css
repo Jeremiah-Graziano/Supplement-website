@@ -366,13 +366,15 @@ nav ul {
   margin-top: -100px;
   margin-left: 100px;
   border: solid white 1px;
+  box-shadow: 0px 0px 70px -50px;
+  text-align: left;
 }
 
 .beef-specs h2 {
   padding-top: 50px;
+  margin: 0 80px;
   margin-bottom: 50px;
   font-size: 45px;
-  text-align: center;
   font-weight: bolder;
 }
 
@@ -390,6 +392,7 @@ nav ul {
   content: "";
   background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMTIyLjg3N3B4IiBoZWlnaHQ9IjEwMS4wNTJweCIgdmlld0JveD0iMCAwIDEyMi44NzcgMTAxLjA1MiIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMTIyLjg3NyAxMDEuMDUyIiB4bWw6c3BhY2U9InByZXNlcnZlIj48Zz48cGF0aCBkPSJNNC40Myw2My42M2MtMi44NjktMi43NTUtNC4zNTItNi40Mi00LjQyNy0xMC4xMWMtMC4wNzQtMy42ODksMS4yNjEtNy40MTIsNC4wMTUtMTAuMjgxIGMyLjc1Mi0yLjg2Nyw2LjQxNy00LjM1MSwxMC4xMDYtNC40MjVjMy42OTEtMC4wNzYsNy40MTIsMS4yNTUsMTAuMjgzLDQuMDEybDI0Ljc4NywyMy44NTFMOTguNTQzLDMuOTg5bDEuNzY4LDEuMzQ5bC0xLjc3LTEuMzU1IGMwLjE0MS0wLjE4MywwLjMwMS0wLjMzOSwwLjQ3OS0wLjQ2NmMyLjkzNi0yLjU0Myw2LjYyMS0zLjY5MSwxMC4yMjMtMy40OTVWMC4wMThsMC4xNzYsMC4wMTZjMy42MjMsMC4yNCw3LjE2MiwxLjg1LDkuNzc1LDQuNzY2IGMyLjY1OCwyLjk2NSwzLjg2Myw2LjczMSwzLjY2MiwxMC40MTJoMC4wMDRsLTAuMDE2LDAuMTc2Yy0wLjIzNiwzLjU1OC0xLjc5MSw3LjAzNS00LjYwOSw5LjYzMmwtNTkuMjI0LDcyLjA5bDAuMDA0LDAuMDA0IGMtMC4xMTEsMC4xNDEtMC4yMzYsMC4yNjItMC4zNzIsMC4zNjhjLTIuNzczLDIuNDM1LTYuMjc1LDMuNjI5LTkuNzU3LDMuNTY5Yy0zLjUxMS0wLjA2MS03LjAxNS0xLjM5Ni05Ljc0MS00LjAxNkw0LjQzLDYzLjYzIEw0LjQzLDYzLjYzeiIvPjwvZz48L3N2Zz4=);
   left: -43px;
+  margin-right: -25px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: 10px 10px;
@@ -402,7 +405,7 @@ nav ul {
 }
 
 .beef-specs li {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   padding-top: 0;
   font-weight: bold;
   list-style-type: none;
