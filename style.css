@@ -412,21 +412,31 @@ nav ul {
 }
 
 .capsule-specs {
-  padding-top: 50px;
+  padding-top: 150px;
+  padding: 150px 50px;
+
   background-image: url(https://cdn.shopify.com/s/files/1/0310/6373/6457/files/benefits-bg.png?v=1665214243);
 }
 
 .capsule-specs img {
-  width: 500px;
+  width: 550px;
+}
+
+.capsule-specs h2 {
+  font-size: 45px;
+  font-weight: bold;
+  margin-right: 80px;
+  margin-bottom: 60px;
 }
 
 .capsule-specs ul {
-  margin: 80px;
+  margin-right: 80px;
   margin-bottom: 150px;
   list-style: none;
   border-left: dashed black;
   text-align: left;
   text-indent: 0;
+  font-size: 20px;
 }
 
 .capsule-specs li::before {
@@ -446,10 +456,12 @@ nav ul {
 }
 
 .capsule-specs li {
-  margin-bottom: 20px;
+  position: relative;
+  top: -5px;
+  margin-bottom: 15px;
   padding-top: 0;
-  font-weight: bold;
   list-style-type: none;
+  font-size: 20px;
 }
 
 .small-message {
@@ -485,10 +497,23 @@ nav ul {
   font-weight: bold;
 }
 
+.austrailia h3::before {
+  position: relative;
+  top: 10px;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  content: "";
+  border-radius: 50%;
+  background-color: #6c4533;
+}
+
 .austrailia div {
   margin-bottom: 30px;
+  padding: 30px 20px;
+  width: 100%;
   background-color: white;
-  padding: 20px 10px;
 }
 
 .austrailia h3 {
@@ -496,15 +521,26 @@ nav ul {
   background-color: white;
 }
 
-.testimonial {
-  height: 100vh;
-  background-image: url(https://cdn.shopify.com/s/files/1/0310/6373/6457/files/bg-reviews.png?v=1665395717);
+.sub-sections p {
+  margin-left: 50px;
 }
+
+.testimonial {
+  height: 100%;
+  width: 100%;
+  background-image: url(https://cdn.shopify.com/s/files/1/0310/6373/6457/files/bg-reviews.png?v=1665395717);
+  background-position: 75% 0;
+}
+
+/* .testimonial-outer-shell {
+  padding-bottom: 200px;
+} */
 
 .testimonial h2 {
   text-align: center;
   padding: 100px;
-  font-size: 65px;
+  font-size: 60px;
+  color: #1f0a00;
   font-weight: bold;
 }
 
@@ -522,4 +558,24 @@ nav ul {
   font-size: 22px;
   font-weight: 200;
   padding-top: 30px;
+}
+
+.testimonial button {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  top: 150px;
+  right: 70%;
+  margin-right: 10px;
+  margin-bottom: 50px;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAYAAACtWK6eAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEwAACxMBAJqcGAAABI1JREFUeJzt3c2r5XMcB/A3xsNMxGIKIZKnDCsbDwvZWQ02lNWVBZE8FLKYnYe/gY1LhI2FFZPGFGXBjHkgUR6KpBClBvN0Lc7cQs1c5/c99/O993der/ru7rm97/39Puf8+r7POb8EAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAfs5Ksi3J/iSHkhxMsifJk0k2dcwF3V2W5OskS8dZXyS5uFs66OjcnHg4ltfeJKd2yghdnJlkV1YejuV1b5+YUG9Dkrfz/4dj6djPw1xYzHTDsZTk+x5BodrTmX44lpL80CMsVLovw4ZjKcmODnmhzNYkhzN8QO6rjww1rk9yIMOH46PY5mWkrkjyU4YPx7dJzq8ODRX+bxF4vPVLkqvKU0OBaYvA/64/ktxUnhoKDCkC/7mOJLmjPDUUWczw4VhK8mB5YigytAhcXs/VR4YaLUXgUpKXk5xUnhoKtBaB26PrYKRai8DdmXyqEEantQj8JopARqq1CPw5yZXlqaFAaxF4IMmN5amhwCyKwNvLU0ORxbRt5z5QnhiKtBaBz9ZHhhqtReBL9ZGhRmsR+E4UgYxUaxG4K5NdLxidWRSB55WnhgKKQDiOWRSBN5SnhgKtReDhJLeVp4Yii2nbzr2/PDEUaS0Cn6mPDDVai8DF8sR0M28f/dya5M0kpwx8/LvHfsehmSVaP45k8gTBSLUWgfO+DifZl+SJJBun/N+zxrUWgda/1+dxT8XR2JDJM1/vk2ps67MkZ0xxHNalk3sHKLCQ5NreIUbo6szBl9/Nw4Dc0zvAiN3dO8Bqm4ddrD+TnN47xEj9lZFfZs3DK8g8/I29LPUOsNrm4eTZ1zvAiO3vHWC1zcOAvNg7wIi90jsA7U5Nsjf9t0XHtvYkOW2K48AadmmSH9P/pBrL+iTJBVMdgXVqHnaxll2XZGfaPjd+NJMTZB79keTTJK8meSHJwb5xWA23ZvJGw6HPnDvisoKRW0jb5cVrma9X3rk29G3f69meTC6Vbhn4+GsyuUzbPrNEsAY9n7ZXkkfqI0OdU5K8leEDcjTJneWpodCmJB9m+JD8meTm8tRQaHOSLzN8SH5NsqU8NRRqLRK/S3JheWoodF2S3zN8SPYnObs8NRRqLRLfiyKRkVtI2/bv61EkjsY8FoUrmUWReFYUiYxca5H4aH1kqDOLIvGu8tRQSJEIK5hFkXhNeWoopEiEFcyiSDynPDUUai0Sd8aX2DFyC2nb/n0jisR1Q1E4vdYicUsm79l6Z2aJYA1qLRIfq48MdRSJsILWIvGvDL9Ug3WhtUj8LW7ww8i1FonfJ7moPDUUai0S90ZHwsi1FokP1UeGWgsZPiAf1MeFetsybEB+6REWehhSJP7cJSl0MKRIfL9LUuhk2iLx4T4xoZ/NSb7IysPxZZKNnTJCV5fkxEPyVZLLe4WDtWBTkseTfJzJ/f4OJNmd5Km03TcRAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAUn8DCMmwSgYb6w0AAAAASUVORK5CYII=);
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
+  border-radius: 50%;
+  border: 1px white;
+  background-position: center;
+}
+
+.testimonial button:last-of-type {
+  transform: rotate(180deg);
 }
