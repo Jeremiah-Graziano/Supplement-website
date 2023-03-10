@@ -1,5 +1,4 @@
-### Beef tallow
+### Supplement Website
 
-Supplement Website
-I chose to remake a supplement website that showed a lot of opportunities where pseudo elements could be applied as well as It being a more modern ecommerce website with a clean minimal appearance, being a style that is very popular currently. This project was also great to get more experience with positioning, like in the section that talks about “Grass fed beef tallow contains” with the bullets underneath was great to layer and position the white container over the image with a box shadow to make the page have more of a pop affect to it.
-![Alt text](./beef-supplement-site.png "Optional Title")
+I chose to remake this website because it has a clean minimal appearance and opportunities to leverage pseudo elements for styling and advanced positioning—skills I wanted to further develop. I created the unordered lists using pseudo elements. The checkmarks use data URIs with a base64 encoded image. I leveraged CSS positioning for the white container that sits over the image. It has a CSS box shadow to add dimension. The website is responsive using Bootstrap for the grid.
+![Supplement website screenshot](./beef-supplement-site.png)
